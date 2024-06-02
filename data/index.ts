@@ -75,15 +75,15 @@ export const projects = [
         title: "Pictogram",
         des: "an Instagram clone built with React, TailwindCSS, and Appwrite",
         img: "/pictogram.svg",
-        iconLists: ["React", "TailwindCSS", "Appwrite"],
+        iconLists: ["/tail.svg", "/re.svg", "/ts.svg", "/appwrite.svg"],
         link: "https://pictogram-lqc.vercel.app/",
       },
       {
         id: 2,
         title: "Record",
-        des: "A simple Kanban board built with Angular 17, TailwindCSS, Java Spring Boot, and MySQL",
+        des: "A simple Kanban board including live chat built with Angular 17, TailwindCSS, Java Spring Boot",
         img: "/record.svg",
-        iconLists: ["Angular", "TailwindCSS", "Java Spring Boot", "MySQL"],
+        iconLists: ["/angular.svg", "/tail.svg", "/springboot.svg", "/ts.svg"],
         link: "https://github.com/PhilippeLqc/RecordFrontend",
       },
 ]

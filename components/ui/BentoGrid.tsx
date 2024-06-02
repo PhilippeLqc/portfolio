@@ -51,7 +51,7 @@ export const BentoGridItem = ({
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("pro@philippelequoc.com");
+    navigator.clipboard.writeText(process.env.NEXT_PUBLIC_EMAIL_HOST!);
     setCopied(true);
   };
   return (
@@ -120,7 +120,7 @@ export const BentoGridItem = ({
           {id === 3 && (
             <div className="flex gap-1 lg:gap-1 w-fit absolute -right-3 lg:right-4">
               <div className="flex flex-col gap-3 lg:gap-2">
-                {["Angular", "Java", "Spring", "mySQL"].map((tech) => (
+                {["MySQL", "Java", "Angular", "Spring"].map((tech) => (
                   <span
                     className="lg:py-4 lg:px-5 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"

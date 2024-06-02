@@ -31,7 +31,7 @@ const Hero = () => {
             words="Crafting solutions with a customer-focused approach."
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Philippe, a Junior Developper based in Bordeaux.
+            Hi, I&apos;m Philippe, Junior Developper based in Bordeaux.
           </p>
           <a href="#about">
             <MagicButton

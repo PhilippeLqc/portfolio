@@ -2,8 +2,8 @@
 import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
-import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa6";
+import Link from "next/link";
 
 const RecentProject = () => {
   return (
@@ -18,43 +18,47 @@ const RecentProject = () => {
             key={id}
           >
             <PinContainer title={link} href={link}>
-              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[25vh] h-[30vh] mb-10">
-                <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
-                  <img src="/bg.png" alt="bg-img" />
+              <Link href={link}>
+                <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[25vh] h-[30vh] mb-10">
+                  <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
+                    <img src="/bg.png" alt="bg-img" />
+                  </div>
+                  <img
+                    src={img}
+                    alt={title}
+                    className="z-10 absolute bottom-0 object-cover w-full h-full"
+                  />
                 </div>
-                <img
-                  src={img}
-                  alt={title}
-                  className="z-10 absolute bottom-0 object-cover w-full h-full"
-                />
-              </div>
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                {title}
-              </h1>
-              <p className="font-light lg:font-normal lg:text-xl text-sm line-clamp-2">
-                {des}
-              </p>
-              <div className="flex items-center justify-between mt-7 mb-3 ">
-                <div className="flex items-center">
-                  {iconLists.map((icon, index) => (
-                    <div
-                      key={icon}
-                      className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex items-center justify-center"
-                      style={{
-                        transform: `translateX(-${5 * index * 2}px)`,
-                      }}
-                    >
-                      <img src={icon} alt="icon" className="p-2" />
-                    </div>
-                  ))}
+                <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+                  {title}
+                </h1>
+                <p className="font-light lg:font-normal lg:text-xl text-sm line-clamp-2">
+                  {des}
+                </p>
+                <div className="flex items-center justify-between mt-7 mb-3 ">
+                  <div className="flex items-center">
+                    {iconLists.map((icon, index) => (
+                      <div
+                        key={icon}
+                        className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex items-center justify-center"
+                        style={{
+                          transform: `translateX(-${5 * index * 2}px)`,
+                        }}
+                      >
+                        <img src={icon} alt="icon" className="p-2" />
+                      </div>
+                    ))}
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <p className="flex lg:text-xl md:text-sm text-sm text-purple">
+                      {link.includes("github")
+                        ? "Check Github"
+                        : "Check Live site"}
+                    </p>
+                    <FaLocationArrow className="ms-3 color:#CBACF9" />
+                  </div>
                 </div>
-                <div className="flex items-center justify-center">
-                  <p className="flex lg:text-xl md:text-sm text-sm text-purple">
-                    Check Live site
-                  </p>
-                  <FaLocationArrow className="ms-3 color:#CBACF9" />
-                </div>
-              </div>
+              </Link>
             </PinContainer>
           </div>
         ))}
