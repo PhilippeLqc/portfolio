@@ -95,7 +95,7 @@ export const BentoGridItem = ({
         </div>
         {id === 6 && (
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
+            {/* <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div> */}
           </BackgroundGradientAnimation>
         )}
         <div
@@ -122,7 +122,7 @@ export const BentoGridItem = ({
               <div className="flex flex-col gap-3 lg:gap-2">
                 {["Angular", "Java", "Spring", "mySQL"].map((tech) => (
                   <span
-                    className="lg:py-4 lg:px-4 py-2 px-3 text-xs lg:text-base opacity-50 
+                    className="lg:py-4 lg:px-5 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                     key={tech}
                   >
