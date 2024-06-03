@@ -90,19 +90,22 @@ export const projects = [
 
 export const testimonials = [
     {
-        quote: "quote 1",
-        name: "name 1",
-        title: "title 1",
+        quote: "Philippe excelled in operational tasks, demonstrated exceptional client communication, remained unflappable under pressure, and swiftly understood complex concepts. His proactive approach made him an invaluable asset.",
+        name: "Fabien M",
+        title: "Software Application Engineer",
+        image: "/fabien.jpeg",
     },
     {
-        quote: "quote 2",
-        name: "name 2",
-        title: "title 2",
+        quote: "Philippe's positive mindset, ability to balance autonomy and collaboration, and his strong grasp of JavaScript, ReactJS, and NodeJS made him a standout candidate. His proactive approach and excellent problem-solving skills promise great potential in any development team.",
+        name: "Joé M",
+        title: "former teacher & fullstack developper",
+        image: "/joe.jpeg",
     },
     {
         quote: "quote 3",
-        name: "name 3",
-        title: "title 3",
+        name: "Emma L",
+        title: "bank advisor",
+        image: "/emma.jpeg",
     },
 ]
 
