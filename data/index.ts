@@ -98,13 +98,13 @@ export const testimonials = [
     {
         quote: "Philippe's positive mindset, ability to balance autonomy and collaboration, and his strong grasp of JavaScript, ReactJS, and NodeJS made him a standout candidate. His proactive approach and excellent problem-solving skills promise great potential in any development team.",
         name: "Joé M",
-        title: "former teacher & fullstack developper",
+        title: "Former teacher & Fullstack developper",
         image: "/joe.jpeg",
     },
     {
-        quote: "quote 3",
+        quote: "Always available and ready to help, Philippe is attentive and considerate. He has excellent interpersonal skills, demonstrating patience and active listening to meet client expectations. He integrates seamlessly into teams, making it a pleasure to work alongside him.",
         name: "Emma L",
-        title: "bank advisor",
+        title: "Bank Advisor",
         image: "/emma.jpeg",
     },
 ]
@@ -112,15 +112,33 @@ export const testimonials = [
 export const companies = [
     {
         id: 1,
-        name: "company 1",
-        img: "",
-        nameImg: "",
+        name: "Deolan",
+        img: "/deolan.svg",
+        nameImg: "deolan",
     },
     {
         id: 2,
-        name: "company 2",
-        img: "",
-        nameImg: "",
+        name: "Au Max Pour Moi",
+        img: "/aumax.svg",
+        nameImg: "aumaxpourmoi",
+    },
+    {
+        id: 3,
+        name: "Crédit mutuel Arkea",
+        img: "/arkea.svg",
+        nameImg: "arkea",
+    },
+    {
+        id: 4,
+        name: "La Capsule",
+        img: "/la_capsule.svg",
+        nameImg: "lacapsule",
+    },
+    {
+        id: 5,
+        name: "Ib Cegos",
+        img: "/ibcegos.svg",
+        nameImg: "ibcegos",
     },
 ]
 
