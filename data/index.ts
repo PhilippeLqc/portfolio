@@ -149,7 +149,8 @@ export const workExperience = [
         title: "Student",
         date: "Feb 2024 - Apr 2024",
         place: "Bordeaux, FR",
-        desc: ["Studying web development", "Java Spring & Spring Boot", "Angular 13 & 17", "TailwindCSS", "Agile Scrum methodology"],
+        desc: ["Studying web development as frontend & backend", "Java Spring & Spring Boot as framework", "Angular 13 & 17 as frontend", "TailwindCSS & Bootstrap", "Agile Scrum methodology"],
+        imglogo: "/ibcegoslogo.svg",
         className: "md:col-span-2",
     },
     {
@@ -158,7 +159,8 @@ export const workExperience = [
         title: "Student",
         date: "Feb 2023 - Jun 2023",
         place: "Bordeaux, FR",
-        desc: ["Studying web development", "NodeJS", "React & React Native", "NextJS & ExpressJS", "Agile Scrum methodology"],
+        desc: ["Studying web development as frontend & backend", "NodeJS as backend", "React & React Native as frontend framework", "NextJS & ExpressJS", "Agile Scrum methodology"],
+        imglogo: "/lacapsulelogo.svg",
         className: "md:col-span-2",
     },
     {
@@ -168,6 +170,7 @@ export const workExperience = [
         date: "2022 - 2023",
         place: "Bordeaux, FR",
         desc: ["Analyse and resolve technical issues", "Provide technical & IT support","write technical documentation", "Provide financial advice"],
+        imglogo: "/aumaxlogo.svg",
         className: "md:col-span-2",
     },
     {
@@ -177,15 +180,17 @@ export const workExperience = [
         date: "2019 - 2022",
         place: "Bordeaux, FR",
         desc: ["Provide financial advice B2C & B2B", "Provide IT support", "Digital specialist"],
+        imglogo: "/arkealogo.svg",
         className: "md:col-span-2",
     },
     {
         id: 5,
         company: "Deolan",
         title: "IT support & Assistant Manager",
-        date: "2019 - 2020",
+        date: "2016 - 2019",
         place: "Mérignac, FR",
         desc: ["Developed and tested LogBook app features", "Provided UI/UX feedback and created user stories", "Managed and validated client data on Deolan's platform", "Documented new features and usage instructions"],
+        imglogo: "/deolanlogo.svg",
         className: "md:col-span-2",
     },
 

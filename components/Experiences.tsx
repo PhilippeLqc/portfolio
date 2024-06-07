@@ -6,10 +6,11 @@ import { Tabs } from "./ui/Tabs";
 const Experiences = () => {
   const tabs = workExperience.map((experience) => ({
     id: experience.id,
+    imglogo: experience.imglogo,
     title: experience.company,
     value: experience.company,
     content: (
-      <div className="flex flex-col">
+      <div className="flex flex-col w-[480px] h-full">
         <h3 className="text-2xl font-bold">
           {experience.title}{" "}
           <span className="text-purple">@ {experience.company}</span>
@@ -31,11 +32,11 @@ const Experiences = () => {
   }));
 
   return (
-    <div className="p-6 bg-gray-900 text-white">
+    <div className="p-6  text-white">
       <h1 className="heading">
-        My work and school <span className="text-purple">Experiences</span>
+        My work and school <span className="text-purple">experiences</span>
       </h1>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center w-full justify-center">
         <Tabs tabs={tabs} />
       </div>
     </div>
