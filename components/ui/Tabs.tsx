@@ -41,11 +41,11 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "flex flex-row flex-wrap items-center justify-center [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar py-40 gap-10",
+          "flex md:flex-row flex-wrap items-center md:justify-center [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar py-20 md:py-40 gap-10",
           containerClassName
         )}
       >
-        <div className="flex lg:flex-col gap-2">
+        <div className="flex flex-wrap flex-row gap-2 md:flex-col">
           {propTabs.map((tab, idx) => (
             <button
               key={tab.title}
@@ -53,7 +53,7 @@ export const Tabs = ({
                 moveSelectedTabToTop(idx);
               }}
               className={cn(
-                "px-4 py-2 rounded-xl w-[9vw] group transition-all duration-300 ease-in-out hover:bg-gray-200 dark:hover:bg-zinc-800 ",
+                " flex flex-wrap items-center px-2 py-4 md:px-4 md:py-2 rounded-sm md:rounded-xl w-[60vw] md:w-[12vw] group transition-all duration-300 ease-in-out hover:bg-gray-200 dark:hover:bg-zinc-800 ",
                 tabClassName
               )}
               style={{
@@ -65,14 +65,14 @@ export const Tabs = ({
                   layoutId="clickedbutton"
                   transition={{ type: "just", duration: 0 }}
                   className={cn(
-                    "absolute inset-0 bg-gray-200 dark:bg-zinc-800 rounded-xl opacity-50",
+                    "absolute inset-0 bg-gray-200 dark:bg-zinc-800 rounded-sm md:rounded-xl opacity-50",
                     activeTabClassName
                   )}
                 />
               )}
               <div className="flex flex-row items-center gap-2 relative">
                 <img src={tab.imglogo} alt={tab.title} width={20} height={20} />
-                <span className="relative block text-black dark:text-white text-left">
+                <span className="relative block text-black dark:text-white md:text-left text-center">
                   {tab.title}
                 </span>
               </div>

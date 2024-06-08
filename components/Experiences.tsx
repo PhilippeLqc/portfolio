@@ -10,7 +10,7 @@ const Experiences = () => {
     title: experience.company,
     value: experience.company,
     content: (
-      <div className="flex flex-col w-[480px] h-full">
+      <div className="flex flex-col w-full md:w-[480px] h-full">
         <h3 className="text-2xl font-bold">
           {experience.title}{" "}
           <span className="text-purple">@ {experience.company}</span>
@@ -22,7 +22,7 @@ const Experiences = () => {
         <div className="mt-2">
           {experience.desc.map((desc, index) => (
             <ul key={index} className="flex flex-row items-center gap-2">
-              <FaCheck className="text-green-500" />
+              <FaCheck className="text-purple" />
               <p>{desc}</p>
             </ul>
           ))}
@@ -32,14 +32,14 @@ const Experiences = () => {
   }));
 
   return (
-    <div className="p-6  text-white">
+    <section className="p-6 text-white" id="experiences">
       <h1 className="heading">
         My work and school <span className="text-purple">experiences</span>
       </h1>
       <div className="flex items-center w-full justify-center">
         <Tabs tabs={tabs} />
       </div>
-    </div>
+    </section>
   );
 };
 
