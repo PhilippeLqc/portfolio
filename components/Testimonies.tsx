@@ -1,9 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React from "react";
 import { InfiniteMovingCards } from "./ui/InfiniteMovingCards";
 import { companies, testimonials } from "@/data";
+import Image from "next/image";
 
 const Testimonies = () => {
   return (
@@ -24,7 +24,7 @@ const Testimonies = () => {
           {companies.map(({ id, img, nameImg }) => (
             <React.Fragment key={id}>
               <div className="flex md:max-w-60 max-w-32 gap-2 mt-20">
-                <img src={img} alt={nameImg} />
+                <Image src={img} alt={nameImg} width={150} height={150} />
               </div>
             </React.Fragment>
           ))}

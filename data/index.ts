@@ -83,7 +83,7 @@ export const projects = [
         id: 2,
         title: "Record",
         des: "A simple Kanban board including live chat built with Angular 17, TailwindCSS, Java Spring Boot",
-        img: "/record.svg",
+        img: "/Record.svg",
         iconLists: ["/angular.svg", "/tail.svg", "/springboot.svg", "/ts.svg"],
         link: "https://github.com/PhilippeLqc/RecordFrontend",
       },
@@ -199,18 +199,22 @@ export const workExperience = [
 
 export const socialMedia = [
     {
+      link: "https://github.com/PhilippeLqc",
       id: 'github',
       img: "/git.svg",
     },
     {
-        id: 'linkedin',
-        img: "/link.svg",
+      link: "https://www.linkedin.com/in/philippe-lqc/",
+      id: 'linkedin',
+      img: "/link.svg",
     },
     {
-      id: 'twitter/X',
+      link: "https://twitter.com/pilipou",
+      id: 'twitter',
       img: "/twit.svg",
     },
     {
+      link: "https://www.instagram.com/pilipou/",
       id: 'instagram',
       img: "/insta.svg",
     },
