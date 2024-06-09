@@ -1,9 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
 import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
 
 const RecentProject = () => {
   return (
@@ -23,10 +23,12 @@ const RecentProject = () => {
                   <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
                     <img src="/bg.png" alt="bg-img" />
                   </div>
-                  <img
+                  <Image
                     src={img}
                     alt={title}
                     className="z-10 absolute bottom-0 object-cover w-full h-full"
+                    width={570}
+                    height={250}
                   />
                 </div>
                 <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
@@ -45,7 +47,7 @@ const RecentProject = () => {
                           transform: `translateX(-${5 * index * 2}px)`,
                         }}
                       >
-                        <img src={icon} alt="icon" className="p-2" />
+                        <Image src={icon} alt="icon" width={20} height={20} />
                       </div>
                     ))}
                   </div>

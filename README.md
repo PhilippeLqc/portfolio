@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio
 
-## Getting Started
+Ce projet est un portfolio personnel développé avec Next.js et diverses bibliothèques pour créer une expérience utilisateur riche et interactive.
 
-First, run the development server:
+## Technologies Utilisées
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: Framework React pour le rendu côté serveur et la génération de sites statiques.
+- **React**: Bibliothèque JavaScript pour construire des interfaces utilisateur.
+- **Tailwind CSS**: Framework CSS utilitaire pour un design rapide et réactif.
+- **Three.js**: Bibliothèque JavaScript pour créer et afficher des graphiques 3D dans le navigateur.
+- **Framer Motion**: Bibliothèque pour les animations.
+- **React Three Fiber**: Liaison React pour Three.js.
+- **React Icons**: Collection d'icônes pour React.
+- **Lottie**: Bibliothèque pour animer des fichiers Lottie.
+- **Sentry**: Outil de monitoring et de reporting d'erreurs.
+- **dotenv**: Module pour charger les variables d'environnement.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `dev`: Démarre le serveur de développement.
+- `build`: Compile l'application pour la production.
+- `start`: Démarre l'application en mode production.
+- `lint`: Lint le code pour trouver et corriger les erreurs.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Dépendances
 
-## Learn More
+### Production
 
-To learn more about Next.js, take a look at the following resources:
+- `@react-three/drei`: Composants et helpers pour React Three Fiber.
+- `@react-three/fiber`: Liaison React pour Three.js.
+- `@sentry/nextjs`: Intégration de Sentry avec Next.js.
+- `clsx`: Utilitaire pour la manipulation des classes CSS.
+- `dotenv`: Gestion des variables d'environnement.
+- `framer-motion`: Animations pour React.
+- `mini-svg-data-uri`: Utilitaire pour optimiser les URI de données SVG.
+- `next`: Framework React pour le rendu côté serveur.
+- `next-themes`: Gestion des thèmes pour Next.js.
+- `react`: Bibliothèque pour construire des interfaces utilisateur.
+- `react-dom`: Liaison React pour le DOM.
+- `react-icons`: Collection d'icônes pour React.
+- `react-lottie`: Composant React pour animer des fichiers Lottie.
+- `tailwind-merge`: Utilitaire pour fusionner les classes Tailwind CSS.
+- `tailwindcss-animate`: Plugin pour les animations Tailwind CSS.
+- `three`: Bibliothèque pour créer des graphiques 3D.
+- `three-globe`: Extension de Three.js pour créer des globes interactifs.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Développement
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `@types/node`: Types pour Node.js.
+- `@types/react`: Types pour React.
+- `@types/react-dom`: Types pour React DOM.
+- `@types/react-lottie`: Types pour React Lottie.
+- `eslint`: Linter pour JavaScript.
+- `eslint-config-next`: Configuration ESLint pour Next.js.
+- `postcss`: Outil pour transformer les styles avec des plugins JavaScript.
+- `tailwindcss`: Framework CSS utilitaire.
+- `typescript`: Superset de JavaScript qui ajoute des types statiques.
 
-## Deploy on Vercel
+## Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clonez le dépôt.
+2. Installez les dépendances avec `npm install`.
+3. Créez un fichier `.env` pour les variables d'environnement.
+4. Démarrez le serveur de développement avec `npm run dev`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contribution
+
+Les contributions sont les bienvenues! Veuillez soumettre une pull request pour toute amélioration ou correction de bug.
+
+## Licence
+
+Ce projet est sous licence MIT.
